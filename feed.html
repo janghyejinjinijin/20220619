@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>피드</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+    <link href="reset.css" rel="stylesheet" type="text/css"/>
+    <meta property="og:url" content="공유시 이동 url">
+    <meta property="og:title" content="공유시 보여질 제목"> 
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="공유시 보여질 이미지 경로">
+    <meta property="og:description" content="공유시 보여질 설명">
+    <style>
+        body{ font-family: 나눔스퀘어, 'NanumSquare', sans-serif; }
+        .main{
+            max-width:600px;
+            margin: 0 auto;
+        }
+        .main .list_box{
+            display: grid;
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+            padding: 0 24px;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .main .list_box li{
+            border-radius: 6px;
+            overflow:hidden;
+        }        
+        .main .list_box img{
+            border :1px;
+            border: solid;
+            border-color: antiquewhite;
+            width :100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .main .profileBox img {
+            width: 80px;
+            height:80px;
+            object-fit: cover;
+            border-radius: 40px;
+        }
+        .main .profileBox {
+            align-items: center;
+            display: flex;
+            padding : 30px 24px;
+        }
+        .main .textBox {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class ="profileBox">
+            <img src="https://t1.daumcdn.net/cfile/tistory/99331C4D5C17CA5306"/>
+
+            <div class="textBox">
+                <h2>개</h2>
+                <span>와로알왈</span>
+            </div>
+        </div>
+        <ul class="list_box">
+            <li>
+                <img src ="https://dimg.donga.com/ugc/CDB/SHINDONGA/Article/5e/0d/9f/01/5e0d9f011a9ad2738de6.jpg"/>
+            </li>
+            <li>
+                <img src="https://dimg.donga.com/ugc/CDB/SHINDONGA/Article/5c/ec/c8/e9/5cecc8e90533d2738de6.jpg"/>
+            </li>
+            <li>
+                <img src="http://cdn.edujin.co.kr/news/photo/202007/33451_61410_5236.jpg"/>
+            </li>
+            <li>
+                <img src="https://mblogthumb-phinf.pstatic.net/MjAxODA0MDZfMiAg/MDAxNTIzMDAyNTU5Njky.vbM03feQ5iozyJHV0T0wdLQwvr6_oB6gBfysDh2wxA4g.Z5R40zkr568wrQxroXHoR5GgBER1-PgIfHk0yFRhBjgg.PNG.nubgood/2018-04-06_11%3B38%3B40.PNG?type=w800"/>
+            </li>
+            <li>
+                <img src="https://ichef.bbci.co.uk/news/640/cpsprodpb/5F42/production/_124868342_29a911c0-97d0-4169-9e63-7d655cae45a7.jpg"/>
+            </li>
+            <li>
+                <img src="https://img.insight.co.kr/static/2019/06/29/700/314b2za481tttx0f25aq.jpg"/>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
